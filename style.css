@@ -119,3 +119,39 @@ html,body {box-sizing:border-box; background:#fff; font-family: -apple-system, B
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0); } 
 }
+
+@media (max-width: 1200px) {
+  .section {padding:0 50px;}
+  .main-home .visual-scroll {right:55px;}
+}
+@media (max-width: 900px) {
+  .myself h2 {font-size: 45px; line-height: 1.5em;}
+  .myself .img img {height:280px;}
+}
+@media (max-width: 700px) {
+  .section {padding:0 22px;}
+  .section:after {border:15px solid #FFCC00;}
+  .top-nav h1 {left: 22px; top: 22px; font-size: 22px; line-height: 37px;}
+  .top-nav .info {right: 22px; top: 28px; font-size: 16px; line-height: 24px;}
+  
+  .myself h2 {margin-bottom:22px; font-size: 32px;}
+  .myself .img {bottom:-2px;}
+  .myself .img img {height:140px;}
+  .quick-link {padding:55px 15px 15px;}
+  .quick-link ul li {margin-left:22px; padding-right:22px;}
+  .quick-link ul li a {font-size: 18px;}
+
+  .main-home .visual-scroll {bottom:30px; right:35px;}
+  .main-home .visual-scroll span {margin-top:8px; font-size:10px;}
+
+  .skill-box .title {margin-bottom:25px;}
+  .skill-box .title h2 {font-size: 32px; line-height: 1.4em;}
+  .skill-box .list ul {display:flex; flex-wrap:wrap; margin:-6px;}
+  .skill-box .list ul li {width:50%; padding:6px;}
+  .skill-box .list ul li .box {height:140px;}
+  .skill-box .list ul li .box .tit {font-size: 18px;}
+  .skill-box .list ul li .box .percent {margin-bottom:-30px; font-size: 26px;}
+
+  .skill-box .list ul li:hover .box .tit {margin-top:-20px;}
+
+}
