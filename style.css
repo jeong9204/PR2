@@ -129,10 +129,10 @@ html,body {box-sizing:border-box; background:#fff; font-family: -apple-system, B
   .myself .img img {height:280px;}
 }
 @media (max-width: 700px) {
-  .section {padding:0 22px;}
-  .section:after {border:15px solid #FFCC00;}
-  .top-nav h1 {left: 22px; top: 22px; font-size: 22px; line-height: 37px;}
-  .top-nav .info {right: 22px; top: 28px; font-size: 16px; line-height: 24px;}
+  .section {padding:0 25px;}
+  .section:after {border:10px solid #FFCC00;}
+  .top-nav h1 {left: 25px; top: 22px; font-size: 22px; line-height: 37px;}
+  .top-nav .info {right: 25px; top: 28px; font-size: 16px; line-height: 24px;}
   
   .myself h2 {margin-bottom:22px; font-size: 32px;}
   .myself .img {bottom:-2px;}
