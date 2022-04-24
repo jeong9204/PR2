@@ -5,10 +5,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>YJ</title>
+  <link rel="stylesheet" type="text/css" href="jquery.fullPage.css">
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <script type="text/javascript" src="jquery-1.11.1.min.js"></script>
   <script type="text/javascript" src="jquery.easing.1.3.js"></script>
+  <script type="text/javascript" src="jquery.fullPage.min.js"></script>
   <script src="script.js"></script>
   <style>
     @font-face {
@@ -20,34 +25,72 @@
   </style>
 </head>
 <body>
-  <div class="wrap">
-    <div class="top-nav">
-      hey there!
-    </div>
-    <div class="in-contain">
-      <div class="cnt">
-        <div class="box">
-          <div class="date">2022.04.23</div>
-          <div class="thumb">
-            <img src="thumb_img1.jpeg" alt="">
-          </div>
-          <div class="txt">
-            <p>HTML / CSS는 자신있습니다!</p>
-          </div>
-        </div>
-        <div class="box">
-          <div class="date">2022.04.23</div>
-          <div class="thumb">
-            <img src="thumb_img2.png" alt="">
-          </div>
-          <div class="txt">
-            <p>JS는 많이 부족하지만 열심히 해보겠습니다 :)</p>
-          </div>
-        </div>
-      </div>
+  <div class="top-nav">
+    <h1>JEONG,YJ</h1>
+    <div class="info">19920418 / O형 / ISFP</div>
+  </div>
+  <div id="fullpage">
+    <div class="section main-home">
       <div class="myself">
-        <div class="img"><img src="me.jpg" alt=""></div>
-        <div class="name">Jeong Ye Ji</div>
+        <h2>HELLO,<br>
+          I’m A <strong>DEVELOPER</strong><br>
+          JEONG YE JI
+        </h2>
+        <div class="quick-link">
+          <ul>
+            <li><a href="https://github.com/jeong9204" target="_blank">Github</a></li>
+            <!-- <li><a href="#">Read Me</a></li>
+            <li><a href="#">Career</a></li> -->
+          </ul>
+        </div>
+        <div class="img"><img src="img1.png" alt=""></div>
+      </div>
+      <div class="visual-scroll">
+        <a href="#skill">
+          <img src="visual_scroll.png" alt="scroll">
+          <span>SCROLL</span>
+        </a>
+      </div>
+    </div>
+    <div class="section main-skill">
+      <div class="skill-box">
+        <div class="title">
+          <h2>SKILL</h2>
+        </div>
+        <div class="list">
+          <ul>
+            <li>
+              <div class="box">
+                <div class="tit">PHOTOSHOP</div>
+                <div class="percent">90%</div>
+              </div>
+            </li>
+            <li>
+              <div class="box">
+                <div class="tit">HTML</div>
+                <div class="percent">95%</div>
+              </div>
+            </li>
+            <li>
+              <div class="box">
+                <div class="tit">CSS</div>
+                <div class="percent">95%</div>
+              </div>
+            </li>
+            <li>
+              <div class="box">
+                <div class="tit">JavaScript + jQuery</div>
+                <div class="percent">65%</div>
+              </div>
+            </li>
+            <li>
+              <div class="box">
+                <div class="tit">CO-WORK</div>
+                <div class="percent">95%</div>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
