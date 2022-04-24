@@ -56,20 +56,21 @@ table {
 	border-spacing: 0;
 }
 
-html,body {box-sizing:border-box; background:#fff; font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', Pretendard, Roboto, 'Noto Sans KR', 'Segoe UI', 'Malgun Gothic', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;}
+html,body {background:#fefefe; font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', Pretendard, Roboto, 'Noto Sans KR', 'Segoe UI', 'Malgun Gothic', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;}
 * {box-sizing:border-box;}
-.main-home {position:relative; z-index:1; width:100%; height:100vh;}
-.main-home:after {content:""; position:absolute; top:0; left:0; width:100%; height:100%; box-sizing:border-box; border:30px solid #FFCC00; z-index:-1;}
-.top-nav {position:absolute; width:100%; z-index:2;}
-.top-nav h1 {position: absolute; left: 70px; top: 60px; font-family: 'Montserrat'; font-style: normal; font-weight: 700; font-size: 30px; line-height: 37px; color: #000;}
-.top-nav .tel {position: absolute; right: 65px; top: 66px;}
-.top-nav .tel a {display:block; font-family: 'Montserrat'; font-style: normal; font-weight: 700; font-size: 20px; line-height: 24px; color: #000;}
-.myself {display:block; margin:0 auto; max-width:1200px; width:100%; position:relative;}
-.myself h2 {margin-bottom:30px; font-family: 'Montserrat'; font-style: normal; font-weight: 700; font-size: 60px; line-height: 73px; letter-spacing: -0.02em;}
-.myself h2 strong {font-weight:900;}
-.myself .img {position:absolute; bottom:0; right:0;}
-.quick-link {width:100%; padding:120px 40px 25px; background: linear-gradient(180deg, #305173 0%, #054A94 0.01%, #FF630B 100%);}
-.quick-link ul {display:flex;}
-.quick-link ul li {position:relative; margin-left:43px; padding-left:15px;}
-.quick-link ul li:after {content:""; position:absolute; top:10px; left:0; width:10px; height:10px; border-top:2px solid #fff; border-left:2px solid #fff; transform:rotate(315deg);}
-.quick-link ul li a {display:block; font-weight: 700; font-size: 26px; line-height: 31px; letter-spacing: -0.02em; color:#fff; text-decoration:none;}
+.wrap {position:relative; width:100%; padding-top:80px; padding-bottom:100px; z-index:1;}
+.top-nav {position:fixed; top:0; left:0%; width:100%; height:60px; text-align:center; border:1px solid #ddd; border-top:0; background:#fff; font-family: 'SBAggroB'; font-size:22px; line-height:60px; color:#333; z-index:2;}
+
+.in-contain {position:relative; max-width:935px; width:100%; margin:0 auto; z-index:1;}
+.in-contain .cnt {position:relative; max-width:614px;}
+.in-contain .cnt .box {width:100%; background:#fff; border:1px solid #ddd; margin-bottom:30px;}
+.in-contain .cnt .box:last-child {margin-bottom:0;}
+.in-contain .cnt .box .date {padding:12px 8px; text-align:right; font-size:12px; line-height:1.3em; color:#888; border-bottom:1px solid #ddd}
+.in-contain .cnt .box .thumb {line-height:0; border-bottom:1px solid #ddd;}
+.in-contain .cnt .box .thumb img {width:100%; height:auto;}
+.in-contain .cnt .box .txt {padding:22px 8px;}
+.in-contain .cnt .box .txt p {font-size:14px; line-height:1.5em; color:#333;}
+
+.myself {position:fixed; top:100px; right:50%; margin-right:-467.5px; width:293px; padding:15px 0; text-align:center;}
+.myself .img {position:relative; margin:0 auto 30px; width:200px; height:200px; border-radius:100%; overflow:hidden; box-shadow:5px 5px 5px rgba(0,0,0,0.3);}
+.myself .name {font-size:22px; line-height:1.4em; font-weight:500; color:#333;}
