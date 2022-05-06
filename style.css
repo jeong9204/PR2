@@ -59,6 +59,29 @@ table {
 
 html,body {box-sizing:border-box; background:#fff; font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', Pretendard, Roboto, 'Noto Sans KR', 'Segoe UI', 'Malgun Gothic', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;}
 * {box-sizing:border-box;}
+
+body .main_mov{display: none;}
+body.in .main_mov{position: fixed;top: 0;left: 0;z-index: 5000;display: block;width: 100%;height: 100%;}
+body.in .main_mov .bar{position: absolute;top: 50%;left: 0;z-index: 5001;width: 100%;height: 1px;background-color: #333;animation-delay: 1.1s;animation-delay: 1.1s;animation-name: in_bar_b;animation-duration: 1s;animation-fill-mode: forwards;}
+body.in .main_mov .bar::after{content: "";display: block;width: 0;height: 1px;background-color: #fff;animation-name: in_bar_w;animation-duration: 1s;animation-fill-mode: forwards;}
+body.in .main_mov .ani_bg{position: absolute;z-index: 5000;width: 100%;height: 50%;background-color: #000;animation-delay: 1.1s;animation-name: in_bg;animation-duration: 1s;animation-fill-mode: forwards;}
+body.in .main_mov .top{left: 0;top: 0;}
+body.in .main_mov .bottom{right: 0;top: 50%;}
+
+@keyframes in_bar_b{
+	0 {opacity: 1;}
+	100% {opacity: 0;}
+}
+@keyframes in_bar_w{
+	0 {width: 0;}
+	100% {width: 100%;}
+}
+
+@keyframes in_bg{
+	from {width: 100%;}
+	to{width: 0;}
+}
+
 .section {position:relative; z-index:1; width:100%; height:100vh;}
 .section:after {content:""; position:absolute; top:0; left:0; width:100%; height:100%; box-sizing:border-box; border:30px solid #FFCC00; z-index:-1;}
 .top-nav {position:absolute; width:100%; z-index:2;}
