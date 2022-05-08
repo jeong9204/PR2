@@ -69,11 +69,11 @@ body.in .main_mov .top{left: 0;top: 0;}
 body.in .main_mov .bottom{right: 0;top: 50%;}
 
 @keyframes in_bar_b{
-	0 {opacity: 1;}
+	0% {opacity: 1;}
 	100% {opacity: 0;}
 }
 @keyframes in_bar_w{
-	0 {width: 0;}
+	0% {width: 0;}
 	100% {width: 100%;}
 }
 
