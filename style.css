@@ -119,6 +119,26 @@ body.in .main_mov .bottom{right: 0;top: 50%;}
 .skill-box .list ul li:hover .box .tit {opacity:0; margin-top:-20px;}
 .skill-box .list ul li:hover .box .percent {opacity:1; margin-bottom:0;}
 
+.main-project {position:relative; z-index:1;}
+.main-project:before {content:""; position:absolute; top:0; right:0; width:50vw; height:100%; background:#FFCC00; z-index:-1;}
+.main-project .inner {max-width:1200px; width:100%; position:relative; margin:0 auto;}
+.main-project .inner .title {margin-bottom:32px;}
+.main-project .inner .title h2 {font-family: 'Montserrat'; font-weight: 700; font-size: 60px; line-height: 73px; letter-spacing: -0.02em;}
+.main-project .in-box {display:flex; margin:0 -20px;}
+.main-project .in-box .box {width:50%; padding:0 20px;}
+.main-project .in-box .tit {margin-bottom:18px; font-family: 'Montserrat'; font-weight: 500; font-size: 24px; line-height: 1.5em; letter-spacing: -0.02em;}
+.main-project .in-box .iframe-box {position:relative; width:100%; height:0; padding-bottom:67%; background:#eee; overflow:hidden;}
+.main-project .in-box .iframe-box iframe {position:absolute; top:20px; left:0; width:100%; height:calc(100% - 20px);}
+.main-project .in-box .slider-box {position:relative; width:100%; height:0; padding-bottom:67%; overflow:hidden;}
+.main-project .in-box .slider-box .items {position:absolute; top:0; left:0; width:100%; height:100%;}
+.main-project .in-box .slider-box .items > div {position:absolute; top:0; left:0; width:100%; height:100%; transition: 0.3s ease; opacity: 0;}
+.main-project .in-box .slider-box .items > div.on {opacity:1;}
+.main-project .in-box .slider-box .items .img {position:relative; width:100%; height:0; padding-bottom:67%; overflow:hidden;}
+.main-project .in-box .slider-box .items .img img {position:absolute; top:50%; left:0; transform:translateY(-50%); width:100%; height:auto !important; max-width:100%; min-height:100%; object-fit:cover;}
+.main-project .in-box .slider-box #control {position:absolute; width:100%; bottom:12px; text-align:center;}
+.main-project .in-box .slider-box #control a {display:inline-block; width:22px; height:5px; background:#eee; line-height:0; margin:0 2px}
+.main-project .in-box .slider-box #control a.on {background:#FFCC00;}
+
 @-webkit-keyframes pulse {
   0% {
     -webkit-transform: translate(0, 0);
